@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unix Command List</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Unix Command List</h1>
+    </header>
+
+    <main>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="javascript:history.back()">Back</a></li>
+            </ul>
+        </nav>
+
+        <section id="commands">
+            <h2>Commands</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Command</th>
+                        <th>Description</th>
+                        <th>Example</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td>alias</td><td>Create a shortcut for a command</td><td><code>alias ll="ls -la"</code></td></tr>
+<tr><td>unalias</td><td>Remove an alias</td><td><code>unalias ll</code></td></tr>
+<tr><td>env</td><td>Show environment variables</td><td><code>env</code></td></tr>
+<tr><td>export</td><td>Set environment variables</td><td><code>export PATH=$PATH:/new/path</code></td></tr>
+<tr><td>source</td><td>Execute commands from a file</td><td><code>source ~/.bashrc</code></td></tr>
+<tr><td>basename</td><td>Extract the filename from a path</td><td><code>basename /path/file.txt</code></td></tr>
+<tr><td>dirname</td><td>Extract the directory path</td><td><code>dirname /path/file.txt</code></td></tr>
+<tr><td>uptime</td><td>Show system uptime</td><td><code>uptime</code></td></tr>
+<tr><td>who</td><td>Show logged-in users</td><td><code>who</code></td></tr>
+<tr><td>users</td><td>List logged-in users</td><td><code>users</code></td></tr>
+<tr><td>id</td><td>Show user ID and group ID</td><td><code>id</code></td></tr>
+<tr><td>groups</td><td>Show user groups</td><td><code>groups</code></td></tr>
+<tr><td>passwd</td><td>Change user password</td><td><code>passwd</code></td></tr>
+<tr><td>hostname</td><td>Show or set the hostname</td><td><code>hostname</code></td></tr>
+<tr><td>ping</td><td>Check network connectivity</td><td><code>ping google.com</code></td></tr>
+<tr><td>traceroute</td><td>Trace network route</td><td><code>traceroute google.com</code></td></tr>
+<tr><td>ifconfig</td><td>Show network interfaces (deprecated)</td><td><code>ifconfig</code></td></tr>
+<tr><td>ip</td><td>Show or configure IP addresses</td><td><code>ip addr show</code></td></tr>
+<tr><td>netstat</td><td>Show network statistics</td><td><code>netstat -tuln</code></td></tr>
+<tr><td>ss</td><td>Display socket statistics</td><td><code>ss -tuln</code></td></tr>
+<tr><td>nslookup</td><td>Query DNS information</td><td><code>nslookup google.com</code></td></tr>
+<tr><td>dig</td><td>Query DNS information</td><td><code>dig google.com</code></td></tr>
+<tr><td>df</td><td>Check file system disk space usage</td><td><code>df -h</code></td></tr>
+<tr><td>mount</td><td>Mount a file system</td><td><code>mount /dev/sda1 /mnt</code></td></tr>
+<tr><td>umount</td><td>Unmount a file system</td><td><code>umount /mnt</code></td></tr>
+<tr><td>fsck</td><td>Check and repair a file system</td><td><code>fsck /dev/sda1</code></td></tr>
+<tr><td>eject</td><td>Eject a removable device</td><td><code>eject /dev/sr0</code></td></tr>
+<tr><td>crontab</td><td>Schedule tasks</td><td><code>crontab -e</code></td></tr>
+<tr><td>at</td><td>Schedule a task to run once</td><td><code>at 10:00</code></td></tr>
+<tr><td>jobs</td><td>List active jobs</td><td><code>jobs</code></td></tr>
+<tr><td>bg</td><td>Resume a job in the background</td><td><code>bg 1</code></td></tr>
+<tr><td>fg</td><td>Resume a job in the foreground</td><td><code>fg 1</code></td></tr>
+<tr><td>wait</td><td>Wait for a background process</td><td><code>wait</code></td></tr>
+<tr><td>nohup</td><td>Run a command immune to hangups</td><td><code>nohup command &</code></td></tr>
+<tr><td>xargs</td><td>Build and execute command lines</td><td><code>echo "file1 file2" | xargs rm</code></td></tr>
+<tr><td>tee</td><td>Redirect output to a file and screen</td><td><code>ls | tee file.txt</code></td></tr>
+<tr><td>sort</td><td>Sort lines in a file</td><td><code>sort file.txt</code></td></tr>
+<tr><td>uniq</td><td>Remove duplicate lines</td><td><code>uniq file.txt</code></td></tr>
+<tr><td>wc</td><td>Count words, lines, and characters</td><td><code>wc -l file.txt</code></td></tr>
+<tr><td>cut</td><td>Extract sections of lines</td><td><code>cut -d':' -f1 file.txt</code></td></tr>
+<tr><td>awk</td><td>Text processing tool</td><td><code>awk '{print $1}' file.txt</code></td></tr>
+<tr><td>sed</td><td>Stream editor</td><td><code>sed 's/old/new/g' file.txt</code></td></tr>
+<tr><td>diff</td><td>Compare file differences</td><td><code>diff file1.txt file2.txt</code></td></tr>
+<tr><td>cmp</td><td>Compare two files byte by byte</td><td><code>cmp file1.txt file2.txt</code></td></tr>
+<tr><td>ln</td><td>Create symbolic links</td><td><code>ln -s file.txt link.txt</code></td></tr>
+<tr><td>uptime</td><td>Check system uptime</td><td><code>uptime</code></td></tr>
+<tr><td>vmstat</td><td>Report system performance</td><td><code>vmstat 1</code></td></tr>
+<tr><td>iostat</td><td>CPU and I/O statistics</td><td><code>iostat</code></td></tr>
+<tr><td>sar</td><td>System activity report</td><td><code>sar -u</code></td></tr>
+<tr><td>lsblk</td><td>List information about block devices</td><td><code>lsblk</code></td></tr>
+<tr><td>blkid</td><td>Display block device UUIDs</td><td><code>blkid</code></td></tr>
+<tr><td>parted</td><td>Partition management tool</td><td><code>parted /dev/sda</code></td></tr>
+<tr><td>mdadm</td><td>Manage RAID arrays</td><td><code>mdadm --create /dev/md0</code></td></tr>
+<tr><td>tput</td><td>Control terminal capabilities</td><td><code>tput setaf 1</code></td></tr>
+<tr><td>reset</td><td>Reset the terminal</td><td><code>reset</code></td></tr>
+<tr><td>screen</td><td>Terminal multiplexer</td><td><code>screen</code></td></tr>
+<tr><td>tmux</td><td>Terminal multiplexer</td><td><code>tmux</code></td></tr>
+<tr><td>strace</td><td>Trace system calls</td><td><code>strace ls</code></td></tr>
+<tr><td>lsof</td><td>List open files</td><td><code>lsof</code></td></tr>
+<tr><td>dmesg</td><td>View kernel messages</td><td><code>dmesg</code></td></tr>
+<tr><td>journalctl</td><td>Query system logs</td><td><code>journalctl -u sshd</code></td></tr>
+<tr><td>free</td><td>Display memory usage</td><td><code>free -h</code></td></tr>
+<tr><td>uptime</td><td>Display system uptime</td><td><code>uptime</code></td></tr>
+<tr><td>time</td><td>Measure execution time</td><td><code>time ls</code></td></tr>
+
+                </tbody>
+            </table>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Unix Learning Website</p>
+    </footer>
+</body>
+</html>
